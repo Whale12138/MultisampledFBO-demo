@@ -1,0 +1,13 @@
+package {
+	default_applicable_licenses: ["Android-Apache-2.0"],
+}
+android_app {
+	name: "MultisampledFBO",
+	srcs: ["**/*.java"],
+	jni_libs: ["libmultisample_fbo"],
+	// TODO: Change sdk version to 16
+	sdk_version: "current",
+    use_embedded_native_libs: true,
+}
+
+
